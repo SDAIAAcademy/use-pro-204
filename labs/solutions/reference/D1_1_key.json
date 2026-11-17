@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "page": "law-7-2019.html",
+    "fault": null
+  },
+  {
+    "id": 2,
+    "page": "law-7-2019.html",
+    "fault": null
+  },
+  {
+    "id": 3,
+    "page": "law-7-2019.html",
+    "fault": "حكم ملغى"
+  },
+  {
+    "id": 4,
+    "page": "law-7-2019.html",
+    "fault": null
+  },
+  {
+    "id": 5,
+    "page": "reg-3-2020.html",
+    "fault": null
+  },
+  {
+    "id": 6,
+    "page": "law-4-2021.html",
+    "fault": null
+  },
+  {
+    "id": 7,
+    "page": "fz-reg-2022.html",
+    "fault": "اختصاص قضائي خطأ"
+  },
+  {
+    "id": 8,
+    "page": "j-118-2022.html",
+    "fault": null
+  },
+  {
+    "id": 9,
+    "page": "j-455-2023.html",
+    "fault": "مبدأ قضائي محرَّف"
+  },
+  {
+    "id": 10,
+    "page": "judgments.html",
+    "fault": "مرجع مختلق"
+  }
+]

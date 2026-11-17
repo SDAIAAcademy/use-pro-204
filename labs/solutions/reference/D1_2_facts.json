@@ -1,0 +1,45 @@
+{
+  "words_v1": 3584,
+  "words_v2": 3507,
+  "positions": 14,
+  "compliant": 3,
+  "fallback": 4,
+  "red": 4,
+  "missing": 3,
+  "issues": 11,
+  "changes": 13,
+  "changes_modified": 10,
+  "changes_deleted": 2,
+  "changes_added": 1,
+  "changes_noted": 4,
+  "changes_partial": 2,
+  "changes_silent": 7,
+  "run_rows": 8,
+  "run_real": 7,
+  "run_invented": 1,
+  "run_missed": [
+    "P7",
+    "P9",
+    "P10",
+    "P13"
+  ],
+  "run_wrong_class": [
+    "P3"
+  ],
+  "run_wrong_number": [
+    {
+      "p": "P4",
+      "wrote": "15.2",
+      "real": "16.2"
+    }
+  ],
+  "compare_found": 8,
+  "compare_missed": [
+    "13.2 (محذوف)",
+    "15.4",
+    "18.4 (محذوف)",
+    "م2.1",
+    "م4.1"
+  ],
+  "compare_invented": 1
+}
