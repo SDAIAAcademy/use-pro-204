@@ -1,0 +1,134 @@
+[
+  {
+    "id": "D01",
+    "level": "سري",
+    "priv": "لا",
+    "pd": "شخصية",
+    "third": false,
+    "tool": "المساعد التجاري المعتمد",
+    "before": "ترميز",
+    "escalate": false,
+    "rule": 5
+  },
+  {
+    "id": "D02",
+    "level": "عام",
+    "priv": "لا",
+    "pd": "لا",
+    "third": false,
+    "tool": "أداة عامة",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 7
+  },
+  {
+    "id": "D03",
+    "level": "سري",
+    "priv": "نعم",
+    "pd": "شخصية",
+    "third": false,
+    "tool": "ذلول",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 3
+  },
+  {
+    "id": "D04",
+    "level": "سري للغاية",
+    "priv": "نعم",
+    "pd": "لا",
+    "third": false,
+    "tool": "لا أداة",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 1
+  },
+  {
+    "id": "D05",
+    "level": "سري",
+    "priv": "لا",
+    "pd": "حساسة: كله",
+    "third": false,
+    "tool": "ذلول",
+    "before": "ترميز",
+    "escalate": false,
+    "rule": 4
+  },
+  {
+    "id": "D06",
+    "level": "سري",
+    "priv": "لا",
+    "pd": "حساسة: جزء",
+    "third": false,
+    "tool": "المساعد التجاري المعتمد",
+    "before": "حجب الجزء الحساس ثم ترميز",
+    "escalate": false,
+    "rule": 4
+  },
+  {
+    "id": "D07",
+    "level": "سري",
+    "priv": "نعم",
+    "pd": "شخصية",
+    "third": false,
+    "tool": "ذلول",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 3
+  },
+  {
+    "id": "D08",
+    "level": "سري",
+    "priv": "مشكوك",
+    "pd": "شخصية",
+    "third": false,
+    "tool": "ذلول",
+    "before": "لا شيء",
+    "escalate": true,
+    "rule": 3
+  },
+  {
+    "id": "D09",
+    "level": "داخلي",
+    "priv": "لا",
+    "pd": "لا",
+    "third": false,
+    "tool": "المساعد التجاري المعتمد",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 6
+  },
+  {
+    "id": "D10",
+    "level": "داخلي",
+    "priv": "لا",
+    "pd": "شخصية",
+    "third": false,
+    "tool": "المساعد التجاري المعتمد",
+    "before": "ترميز",
+    "escalate": false,
+    "rule": 5
+  },
+  {
+    "id": "D11",
+    "level": "سري",
+    "priv": "لا",
+    "pd": "لا",
+    "third": true,
+    "tool": "لا أداة",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 2
+  },
+  {
+    "id": "D12",
+    "level": "سري للغاية",
+    "priv": "لا",
+    "pd": "لا",
+    "third": false,
+    "tool": "لا أداة",
+    "before": "لا شيء",
+    "escalate": false,
+    "rule": 1
+  }
+]

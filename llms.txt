@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي في الأعمال القانونية والتنظيمية وأعمال الامتثال
+
+> تستعين بالمساعد في البحث ومراجعة العقود وقراءة اللوائح، وتتحقق من كل مرجع في مصدره، وتقرر طريقة التعامل مع كل مستند قبل أن يدخل أي أداة. مقرر من أكاديمية سدايا، الرمز USE-PRO-204، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-pro-204/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-pro-204/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-pro-204/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 16,206 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-pro-204/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: المراجع والعقود](https://sdaiaacademy.github.io/use-pro-204/slides/day1.md): تتحقق من عشرة مراجع في مذكرة كتبها المساعد، ثم تراجع مسودتي اتفاقية وفق دليل المواقف التعاقدية وتقارنهما مقارنة مستقلة؛ الجلسات: المراجع القانونية: أين يخطئ المساعد وكيف تتحقق، العقود: دليل المواقف والمقارنة المستقلة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/slides/day1.html؛ نحو 7,505 من الوحدات النصية
+- [اليوم 2: الالتزامات والمستندات](https://sdaiaacademy.github.io/use-pro-204/slides/day2.md): تحوّل أربع مواد من لائحة حماية البيانات إلى سجل التزامات متحقق منه، ثم تقرر طريقة التعامل مع اثني عشر مستندًا من نزاع؛ الجلسات: من الحكم النظامي إلى سجل الالتزامات، السرية وامتياز السرية المهنية وقرار التعامل؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/slides/day2.html؛ نحو 5,752 من الوحدات النصية
+- [المشروع الختامي: بطاقة إعادة التصميم والمراجعة المباشرة](https://sdaiaacademy.github.io/use-pro-204/slides/capstone.md): تنفيذان بمساعدة الذكاء الاصطناعي يُقاسان مقابل خط الأساس، ثم سبع دقائق لكل مشارك يعيد فيها التحقق من بندين في السجل؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/slides/capstone.html؛ نحو 2,244 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: التحقق من مراجع مذكرة ذلول](https://sdaiaacademy.github.io/use-pro-204/labs/D1_1_verify_authorities.md): اليوم 1، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/labs/D1_1_verify_authorities.html
+- [المختبر 1.2: قائمة المسائل وتقرير المقارنة](https://sdaiaacademy.github.io/use-pro-204/labs/D1_2_playbook_review.md): اليوم 1، الجلسة 2، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/labs/D1_2_playbook_review.html
+- [المختبر 2.1: سجل التزامات من أربع مواد](https://sdaiaacademy.github.io/use-pro-204/labs/D2_1_obligations_register.md): اليوم 2، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/labs/D2_1_obligations_register.html
+- [المختبر 2.2: قرارات التعامل مع اثني عشر مستندًا](https://sdaiaacademy.github.io/use-pro-204/labs/D2_2_document_handling.md): اليوم 2، الجلسة 2، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-204/labs/D2_2_document_handling.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-pro-204/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 16,206 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-pro-204/context/day1.md): اليوم 1، نحو 7,505 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-pro-204/context/day2.md): اليوم 2، نحو 5,752 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-pro-204/context/capstone.md): المشروع الختامي، نحو 2,244 من الوحدات النصية
