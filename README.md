@@ -5,7 +5,7 @@ AI for Legal, Regulatory and Compliance Work
 
 مسار الطلاقة في البيانات والذكاء الاصطناعي · أكاديمية سدايا · USE-PRO-204 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تستعين بالمساعد في البحث ومراجعة العقود وقراءة اللوائح، وتتحقق من كل مرجع في مصدره، وتقرر طريقة التعامل مع كل مستند قبل أن يدخل أي أداة
 
 يؤدي المشاركون دور الفريق القانوني لشركة افتراضية تتعاقد مع مورِّد لمعالجة البيانات. ويجرون البحث القانوني باستخدام مساعد ذكاء اصطناعي، ويراجعون العقد وفق دليل المواقف التعاقدية (playbook)، ويحوّلون لائحة إلى التزامات، مع التحقق من كل مرجع قانوني في مصدره وتحديد طريقة التعامل مع المستندات قبل إدخالها في أي أداة.
 
@@ -29,13 +29,34 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
+| اليوم 1 | المراجع والعقود | المراجع القانونية: أين يخطئ المساعد وكيف تتحقق; العقود: دليل المواقف والمقارنة المستقلة | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | الالتزامات والمستندات | من الحكم النظامي إلى سجل الالتزامات; السرية وامتياز السرية المهنية وقرار التعامل | [`slides/day2.html`](slides/day2.html) |
+| المشروع الختامي | بطاقة إعادة التصميم والمراجعة المباشرة |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
 
-**REPLACE: اسم الجهة الافتراضية التي تعمل عليها كل المختبرات.** REPLACE: جملتان عن دراسة الحالة وبياناتها الاصطناعية
+**شركة سَنام لتأجير السيارات.** شركة افتراضية تتعاقد مع المورّد «رصين للحلول السحابية» على منصة للحجوزات وبيانات تتبع المركبات، وفريقها القانوني يعمل بمساعد داخلي اسمه «قسطاس». كل ما في الحالة اصطناعي ويولّده ملف واحد: مذكرة بحث فيها عشرة مراجع إلى بوابة تشريعات دولة افتراضية اسمها نوارة، واتفاقية معالجة بيانات من 25 صفحة بمسودتين ودليل مواقف من 14 موقفًا، وورقة أدوار وضوابط، واثنا عشر مستندًا من نزاع مع عميل. النص الحقيقي الوحيد في المقرر هو اللائحة التنفيذية لنظام حماية البيانات الشخصية، ويقرؤها المشارك في موقعها الرسمي في المختبر 2.1.
+
+## العمل التحضيري
+
+تسعون دقيقة قبل اليوم الأول، دون أي مساعد: يقرأ المشارك الحالة وبطاقة التعامل، ويختار مسارًا من مسارين (التحقق من مراجع مذكرة قصيرة، أو مراجعة اتفاقية عدم إفصاح وفق دليل مصغر)، وينفذ النموذج 1 بيده ويصححه بمفتاحه، ويملأ سطر خط الأساس في سجل القياس. الدليل في [`labs/files/capstone/prework_guide.html`](labs/files/capstone/prework_guide.html).
+
+## التقييم والمشروع الختامي
+
+| المكوّن | الوزن | أين |
+|---|---|---|
+| اختبار قصير مراقب دون ذكاء اصطناعي: التحقق من أربعة مراجع قانونية | 20% | نهاية اليوم 1. مواده يعدّها المدرب لكل دفعة، وليست في هذا المستودع |
+| مخرجات المختبرات الأربعة | 40% | جدول التحقق، وقائمة المسائل وتقرير المقارنة، وسجل الالتزامات، وقرارات التعامل |
+| بطاقة إعادة التصميم والمراجعة المباشرة | 40% | المشروع الختامي |
+
+شرط النجاح: 70% في المجموع، وألا يكون في أي مخرج مسلَّم مرجع قانوني لم يُتحقق منه.
+
+في المشروع الختامي ينفذ المشارك نموذجين جديدين من مساره بمساعدة الذكاء الاصطناعي، ويقيس الدقائق والأخطاء مقابل خط الأساس، ويكتب بطاقة إعادة تصميم لمهمة تتكرر في عمله، ثم يدافع عنها في مراجعة مباشرة مدتها سبع دقائق يعيد فيها التحقق من بندين في سجل التزاماته. المفاتيح في [`labs/solutions/capstone.md`](labs/solutions/capstone.md)، وأسئلة التدريب في [`assessments/bank.json`](assessments/bank.json).
+
+## استخدام الذكاء الاصطناعي
+
+دون ذكاء اصطناعي في الاختبار القصير المراقب وفي المختبر 2.2 (قرارات التعامل). مرشد في فهم دليل المواقف (الخطوة 2 من المختبر 1.2). كامل في المراجعة وتحويل الأحكام إلى التزامات وإعادة التصميم، مع التحقق من كل مرجع قانوني. كل مختبر يعمل أيضًا دون مساعد: فيه جلسة مسجلة تُراجع كأنها خرجت للمشارك. تفاصيل الملفات والحلول وما شُغّل منها في [`labs/README.md`](labs/README.md).
 
 <!-- academy:labs -->
 ## المختبرات
@@ -44,14 +65,10 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | التحقق من مراجع مذكرة قسطاس | [`D1_1_verify_authorities.html`](labs/D1_1_verify_authorities.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | قائمة المسائل وتقرير المقارنة | [`D1_2_playbook_review.html`](labs/D1_2_playbook_review.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | سجل التزامات من أربع مواد | [`D2_1_obligations_register.html`](labs/D2_1_obligations_register.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | قرارات التعامل مع اثني عشر مستندًا | [`D2_2_document_handling.html`](labs/D2_2_document_handling.html) |
 <!-- /academy:labs -->
 
 ## المتطلبات السابقة
@@ -72,11 +89,37 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [اللائحة التنفيذية لنظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf)
+- [لائحة نقل البيانات الشخصية إلى خارج المملكة](https://sdaia.gov.sa/Documents/RegulationonPersonalDataAR.pdf)
+- [سياسة تصنيف البيانات (مكتب إدارة البيانات الوطنية)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (سدايا)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
+- [صفحة الأنظمة والسياسات في موقع سدايا](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+
+### دقة الذكاء الاصطناعي في البحث القانوني
+
+- [Magesh et al.: Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (2024)](https://arxiv.org/abs/2405.20362)
+- [Dahl et al.: Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models (2024)](https://arxiv.org/abs/2401.01301)
+- [Sharma et al.: Towards Understanding Sycophancy in Language Models (2023)](https://arxiv.org/abs/2310.13548)
+- [Damien Charlotin: AI Hallucination Cases Database](https://www.damiencharlotin.com/hallucinations/)
+
+### توجيهات المحاكم
+
+- [Courts and Tribunals Judiciary (England and Wales): Artificial Intelligence (AI), Judicial Guidance (October 2025)](https://www.judiciary.uk/guidance-and-resources/artificial-intelligence-ai-judicial-guidance-october-2025/)
+
+### الأدوات
+
+- [Open WebUI: الوثائق](https://docs.openwebui.com/)
+- [LibreOffice Help: Comparing Versions of a Document](https://help.libreoffice.org/latest/en-US/text/shared/guide/redlining_doccompare.html)
+- [Microsoft Support: Compare and merge two versions of a document](https://support.microsoft.com/en-us/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
 
-- نظام حماية البيانات الشخصية ولوائحه: REPLACE: عنوان النص الرسمي
-- سياسة تصنيف البيانات الصادرة عن مكتب إدارة البيانات الوطنية: REPLACE: عنوان النص الرسمي
-- مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية الصادرة عن سدايا: REPLACE: عنوان النص الرسمي
+- نظام حماية البيانات الشخصية ولوائحه: [النظام](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)، و[اللائحة التنفيذية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf)، و[لائحة نقل البيانات الشخصية إلى خارج المملكة](https://sdaia.gov.sa/Documents/RegulationonPersonalDataAR.pdf). المختبر 2.1 يبني سجل التزامات من المواد 17 و23 و24 و25 في اللائحة التنفيذية، والجلسة الثانية من اليوم 2 ترجع إلى تعريف البيانات الحساسة في النظام.
+- سياسة تصنيف البيانات الصادرة عن مكتب إدارة البيانات الوطنية: [النص](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf). تُذكر عند مستويات السرية في بطاقة التعامل: مستويات سنام مستويات شركة افتراضية، والجهات الحكومية تصنّف وفق السياسة.
+- مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية الصادرة عن سدايا: [النص](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf). مرجع المشاركين من الجهات الحكومية في استخدام هذه الأدوات، ويُحال إليه عند بطاقة التعامل في اليوم 1.
+
+النصوص قُرئت في موقع سدايا في 17 نوفمبر 2026. اللوائح تُعدَّل: يراجع المدرب السجل المرجعي للمختبر 2.1 على النص المنشور قبل كل دفعة.
