@@ -36,12 +36,12 @@ write(FILES, 'case/case_brief.html', page('ملخص الحالة: سنام ور�
 <h1>ملخص الحالة: شركة سنام لتأجير السيارات</h1>
 <p>سنام شركة افتراضية لتأجير السيارات، مقرها الرياض ولها 64 فرعًا. تريد أن تنقل الحجوزات وعقود التأجير وبيانات تتبع المركبات إلى منصة سحابية يقدمها المورّد «رصين لخدمات البيانات».</p>
 <p>رصين شركة مساهمة مرخصة في مدينة ميناء نوارة بدولة نوارة، <b>خارج المنطقة المالية الحرة</b>. نوارة دولة افتراضية، وقوانينها وأحكام محاكمها في هذا المقرر مختلقة كلها.</p>
-<p>أنت <b>نجود كايد</b>، مستشارة قانونية في الإدارة القانونية بسنام. يعمل معك المساعد «قسطاس»، وهو نموذج مفتوح الأوزان على خوادم الشركة.</p>
+<p>أنت <b>نجود كايد</b>، مستشارة قانونية في الإدارة القانونية بسنام. يعمل معك المساعد «ذلول»، وهو نموذج مفتوح الأوزان على خوادم الشركة.</p>
 <h2>من في الحالة</h2>
 ${table(['الاسم', 'الدور'], [['منيرة الراشد', 'المستشارة العامة'], ['ليث القويز', 'كبير المستشارين القانونيين، يقود التعاقد مع رصين'], ['جوري المشعل', 'مسؤولة الامتثال وحماية البيانات الشخصية'], ['نايف الطويم', 'مدير المشتريات'], ['شاكر الجريان', 'مدير أمن المعلومات'], ['أواب زهدي', 'مدير الحسابات في رصين'], ['مثنى السليمان', 'محامٍ من خارج الشركة، يمثلها في نزاع دروب'], ['متعب الفلاح', 'مالك «دروب لصيانة الأساطيل»'], ['لبيب نهار', 'مشرف أسطول المنطقة الغربية، شاهد في النزاع']])}
 <h2>ما تعمل عليه في يومين</h2>
 <ol>
-<li>مذكرة بحث كتبها قسطاس عن قانون نوارة، فيها عشرة مراجع.</li>
+<li>مذكرة بحث كتبها ذلول عن قانون نوارة، فيها عشرة مراجع.</li>
 <li>اتفاقية معالجة البيانات مع رصين: المسودة الأولى التي أعدتها سنام، والثانية التي أعادتها رصين، ودليل المواقف التعاقدية.</li>
 <li>سجل التزامات من أربع مواد في اللائحة التنفيذية لنظام حماية البيانات الشخصية. هذا هو النص الحقيقي الوحيد في المقرر، وتقرؤه في موقعه الرسمي.</li>
 <li>اثنا عشر مستندًا من نزاع سنام مع متعهد الصيانة «دروب».</li>
@@ -90,9 +90,9 @@ write(FILES, 'portal/index.html', page(P.PORTAL_NAME, `<p class="site">${esc(P.P
 <h2>ترجمات غير رسمية</h2><ul>${link(P.EN.file, P.EN.title)}</ul>
 <h2>عن البوابة</h2><ul>${link('about.html', 'أي نص يُعتمد: النص الموحد، والصفحات التاريخية، والترجمات')}</ul>`, { bar: P.PORTAL_BAR }));
 
-write(FILES, 'memo/qistas_memo.html', page('مذكرة قسطاس: قانون نوارة ومعالجة رصين', `
+write(FILES, 'memo/dhalul_memo.html', page('مذكرة ذلول: قانون نوارة ومعالجة رصين', `
 <h1>مذكرة بحث: قانون نوارة ومعالجة رصين لبيانات عملاء سنام</h1>
-<p class="meta">أعدها المساعد «قسطاس» بطلب من الإدارة القانونية · مسودة لم تُراجع</p>
+<p class="meta">أعدها المساعد «ذلول» بطلب من الإدارة القانونية · مسودة لم تُراجع</p>
 <h2>السؤال</h2><p>${esc(P.MEMO_QUESTION)}</p>
 <h2>الخلاصة</h2><p>${esc(P.MEMO_SUMMARY)}</p>
 <h2>الأسانيد</h2>
@@ -142,12 +142,12 @@ write(FILES, 'contract/cover_note.html', page('رسالة رصين المراف�
 const topic = id => C.PLAYBOOK.find(p => p.id === id).topic;
 // the number the recorded run wrote: one article too low where the run is planted to be wrong
 const claimed = r => { const no = D2.number[r.k]; if (!r.shift) return no; const [a, b] = no.split('.'); return `${Number(a) + r.shift}.${b}`; };
-write(FILES, 'contract/qistas_review_run.html', page('جلسة مسجلة: مراجعة قسطاس للمسودة الثانية', `
-<h1>جلسة مسجلة: مراجعة قسطاس للمسودة الثانية وفق الدليل</h1>
+write(FILES, 'contract/dhalul_review_run.html', page('جلسة مسجلة: مراجعة ذلول للمسودة الثانية', `
+<h1>جلسة مسجلة: مراجعة ذلول للمسودة الثانية وفق الدليل</h1>
 <p class="meta">تُستعمل حين لا يتاح مساعد في القاعة، وللمقارنة بما أعاده مساعدك · مخرج لم يُراجع</p>
 ${table(['#', 'البند', 'الموضوع', 'التصنيف', 'الملاحظة'], C.RUN_REVIEW.map((r, i) => [i + 1, claimed(r), topic(r.p), r.cls, r.note]))}
 <p>${esc(C.RUN_REVIEW_CLOSING)}</p>`));
-write(FILES, 'contract/qistas_compare_run.html', page('جلسة مسجلة: قسطاس يقارن المسودتين', `
+write(FILES, 'contract/dhalul_compare_run.html', page('جلسة مسجلة: ذلول يقارن المسودتين', `
 <h1>جلسة مسجلة: ما الذي تغيّر بين المسودتين؟</h1>
 <p class="meta">أُعطي المساعد نص المسودتين وسُئل عما تغيّر · مخرج لم يُراجع</p>
 <ol>${C.RUN_COMPARE.found.map(k => `<li>البند ${esc(D2.number[k] || D1.number[k])}: ${esc(C.CHANGES[k].what)}.</li>`).join('')}<li>${esc(C.RUN_COMPARE.invented)}</li></ol>
@@ -184,7 +184,7 @@ write(REF, 'D1_2_numbers.json', json({ v1: D1.number, v2: D2.number }));
 // ------------------------------------------------------------------ lab 2.1: the register
 const REG_HEAD = ['#', 'المادة/الفقرة', 'الجهة الملزَمة', 'الالتزام', 'المهلة أو المحفِّز', 'تحققتُ منه في النص الرسمي؟ (نعم، مع الصفحة)', 'المسؤول في سنام', 'الضابط', 'الدليل'];
 write(FILES, 'start/register_template.csv', csv([['المصدر الذي فتحته:', '', 'تاريخ الاطلاع:', ''], REG_HEAD, ...Array.from({ length: 18 }, (_, i) => [i + 1, '', '', '', '', '', '', '', ''])]));
-write(FILES, 'register/qistas_register_draft.csv', csv([['مسودة سجل كتبها المساعد قسطاس · لم تُراجع'], REG_HEAD.slice(0, 5).concat(['تحققتُ منه في النص الرسمي؟', 'الحكم: صحيح أو معيب، وما العيب']), ...F.DRAFT.map(d => [d.n, d.ref, d.who, d.what, d.when, '', '']), [], [F.DRAFT_CLOSING]]));
+write(FILES, 'register/dhalul_register_draft.csv', csv([['مسودة سجل كتبها المساعد ذلول · لم تُراجع'], REG_HEAD.slice(0, 5).concat(['تحققتُ منه في النص الرسمي؟', 'الحكم: صحيح أو معيب، وما العيب']), ...F.DRAFT.map(d => [d.n, d.ref, d.who, d.what, d.when, '', '']), [], [F.DRAFT_CLOSING]]));
 write(FILES, 'register/roles_and_controls.html', page('ورقة الأدوار والضوابط القائمة في سنام', `
 <h1>ورقة الأدوار والضوابط القائمة</h1>
 <p class="meta">الامتثال وحماية البيانات في سنام · داخلي</p>
@@ -212,7 +212,7 @@ const pseudo = t => F.PSEUDO.reduce((s, [a, b]) => s.split(a).join(b), t);
 write(REF, 'D2_2_D05_pseudonymised.md', `# المستند D05 بعد الترميز\n\n${d05.body.map(pseudo).join('\n\n')}\n`);
 
 // ------------------------------------------------------------------ the capstone
-const memoPage = (m) => page(`المسار أ، النموذج ${m.form}: مذكرة قصيرة`, `<h1>المسار أ · النموذج ${m.form}: مذكرة قصيرة بستة مراجع</h1>\n<p class="meta">أعدها المساعد «قسطاس» · مخرج لم يُراجع · المراجع كلها إلى <a href="../portal/index.html">بوابة تشريعات نوارة</a></p>\n<h2>السؤال</h2><p>${esc(m.question)}</p>\n<h2>الأسانيد</h2>\n<ol>${m.cites.map(c => `<li>${esc(c.claim)} <b>[${esc(c.ref)}]</b></li>`).join('')}</ol>\n<p>المطلوب: لكل مرجع حكم (سليم أو معيب)، ونوع العيب، والتصحيح. سجّل وقت البدء ووقت الانتهاء.</p>`);
+const memoPage = (m) => page(`المسار أ، النموذج ${m.form}: مذكرة قصيرة`, `<h1>المسار أ · النموذج ${m.form}: مذكرة قصيرة بستة مراجع</h1>\n<p class="meta">أعدها المساعد «ذلول» · مخرج لم يُراجع · المراجع كلها إلى <a href="../portal/index.html">بوابة تشريعات نوارة</a></p>\n<h2>السؤال</h2><p>${esc(m.question)}</p>\n<h2>الأسانيد</h2>\n<ol>${m.cites.map(c => `<li>${esc(c.claim)} <b>[${esc(c.ref)}]</b></li>`).join('')}</ol>\n<p>المطلوب: لكل مرجع حكم (سليم أو معيب)، ونوع العيب، والتصحيح. سجّل وقت البدء ووقت الانتهاء.</p>`);
 for (const m of P.SHORT_MEMOS) write(FILES, `capstone/track_a_form${m.form}.html`, memoPage(m));
 const ndaClauses = f => { const out = [...F.NDA_BASE.map(([h, t]) => [h, t])]; for (const p of F.NDA_POSITIONS) { const s = f.state[p.id]; if (s === 'بند ناقص') continue; out.push([p.topic, p.text[s]]); } out.push(['النفاذ', 'تنفذ هذه الاتفاقية من تاريخ توقيعها من الطرفين.']); return out; };
 for (const f of F.NDA_FORMS) write(FILES, `capstone/track_b_form${f.form}.html`, page(`المسار ب، النموذج ${f.form}: اتفاقية عدم إفصاح`, `<h1>المسار ب · النموذج ${f.form}: اتفاقية عدم إفصاح</h1>\n<p class="meta">وردت من: ${esc(f.other)} · تُراجع وفق <a href="track_b_playbook.html">الدليل المصغر</a></p>\n${ndaClauses(f).map(([h, t], i) => `<p class="cl"><b>${i + 1}. ${esc(h)}:</b> ${esc(t)}</p>`).join('\n')}\n<p>المطلوب: لكل موقف في الدليل نتيجة (مطابق، بديل احتياطي، خط أحمر، بند ناقص) ورقم البند. سجّل وقت البدء ووقت الانتهاء.</p>`));
@@ -245,11 +245,11 @@ write(FILES, 'capstone/redesign_card.html', page('بطاقة إعادة التص
 // ------------------------------------------------------------------ the trainer's pages
 const sol = (name, body) => write(SOL, name, body);
 const faulty = P.CITES.filter(c => c.fault);
-sol('D1_1_verify_authorities.md', `# الحل المرجعي: المختبر 1.1 التحقق من مراجع مذكرة قسطاس
+sol('D1_1_verify_authorities.md', `# الحل المرجعي: المختبر 1.1 التحقق من مراجع مذكرة ذلول
 
-نقطة البداية: \`files/memo/qistas_memo.html\` و\`files/memo/requests.html\` و\`files/portal/index.html\` و\`files/start/check_table.csv\`. التحقق بالكود: \`node labs/solutions/check.mjs 1.1\`.
+نقطة البداية: \`files/memo/dhalul_memo.html\` و\`files/memo/requests.html\` و\`files/portal/index.html\` و\`files/start/check_table.csv\`. التحقق بالكود: \`node labs/solutions/check.mjs 1.1\`.
 
-قرار التعامل: المذكرة وطلب البحث سريان (فيهما اسم المورّد وموقف سنام التفاوضي)، ولا امتياز ولا بيانات شخصية: أعلى أداة «المساعد التجاري المعتمد»، وفي المقرر نعمل بقسطاس.
+قرار التعامل: المذكرة وطلب البحث سريان (فيهما اسم المورّد وموقف سنام التفاوضي)، ولا امتياز ولا بيانات شخصية: أعلى أداة «المساعد التجاري المعتمد»، وفي المقرر نعمل بذلول.
 
 ${mdTable(['#', 'المرجع', 'الحكم', 'نوع العيب', 'التصحيح'], P.CITES.map(c => [c.id, c.ref, c.fault ? 'معيب' : 'سليم', c.fault || '', c.fix]))}
 السليم ${P.CITES.length - faulty.length} من ${P.CITES.length}، والمعيب ${faulty.length}: ${faulty.map(c => `${c.id} (${c.fault})`).join('، ')}.
@@ -264,7 +264,7 @@ sol('D1_2_playbook_review.md', `# الحل المرجعي: المختبر 1.2 ق
 
 نقطة البداية: \`files/contract/\` (المسودتان بصيغتي docx و html، والدليل، ورسالة المورّد، والجلستان المسجلتان) و\`files/start/issues_list.csv\` و\`files/start/comparison_report.csv\`. التحقق بالكود: \`node labs/solutions/check.mjs 1.2\`.
 
-قرار التعامل: المسودتان والدليل سرية (موقف تفاوضي)، ولا بيانات شخصية ولا امتياز: «المساعد التجاري المعتمد» على الأكثر، وفي المقرر نعمل بقسطاس.
+قرار التعامل: المسودتان والدليل سرية (موقف تفاوضي)، ولا بيانات شخصية ولا امتياز: «المساعد التجاري المعتمد» على الأكثر، وفي المقرر نعمل بذلول.
 
 ## تقرير المقارنة: ${facts12.changes} تغييرًا
 
@@ -284,7 +284,7 @@ ${facts12.red} خطوط حمراء، و${facts12.fallback} بدائل احتيا
 `);
 sol('D2_1_obligations_register.md', `# الحل المرجعي: المختبر 2.1 سجل التزامات من أربع مواد
 
-نقطة البداية: النص الرسمي للائحة في موقع سدايا (${F.REGULATION.url})، و\`files/register/qistas_register_draft.csv\` و\`files/register/roles_and_controls.html\` و\`files/start/register_template.csv\`. التحقق بالكود: \`node labs/solutions/check.mjs 2.1\`.
+نقطة البداية: النص الرسمي للائحة في موقع سدايا (${F.REGULATION.url})، و\`files/register/dhalul_register_draft.csv\` و\`files/register/roles_and_controls.html\` و\`files/start/register_template.csv\`. التحقق بالكود: \`node labs/solutions/check.mjs 2.1\`.
 
 اللائحة ليست مقسمة إلى فصول، فأُخذت منها المواد 17 و23 و24 و25: اختيار جهة المعالجة، وأمن المعلومات، والإشعار بحوادث التسرب، وتقويم الأثر. صيغت الالتزامات هنا بكلمات المقرر بعد قراءة النص، والمرجع دائمًا هو النص العربي المنشور: افتحه قبل كل دفعة، فاللوائح تُعدَّل.
 
@@ -317,7 +317,7 @@ sol('D2_2_document_handling.md', `# الحل المرجعي: المختبر 2.2 
 ${mdTable(['المستند', 'السرية', 'الامتياز', 'البيانات الشخصية', 'أعلى أداة', 'قبلها', 'إحالة', 'القاعدة', 'السبب'], F.DOCS.map((d, i) => [d.id, d.level, d.priv, d.pd, decisions[i].tool, decisions[i].before, decisions[i].escalate ? 'نعم' : 'لا', decisions[i].rule, d.why]))}
 التوزيع: ${F.TOOLS.map(t => `${t}: ${decisions.filter(d => d.tool === t).length}`).join('، ')}.
 
-الترميز: المستند D05 بعد تطبيق جدول المفاتيح في \`reference/D2_2_D05_pseudonymised.md\`. يبقى فيه التشخيص والسوابق المرضية: الترميز يخفي من هو المريض، ولا يجعل البيانات غير حساسة، ولذلك لا يتجاوز «قسطاس».
+الترميز: المستند D05 بعد تطبيق جدول المفاتيح في \`reference/D2_2_D05_pseudonymised.md\`. يبقى فيه التشخيص والسوابق المرضية: الترميز يخفي من هو المريض، ولا يجعل البيانات غير حساسة، ولذلك لا يتجاوز «ذلول».
 
 سطر الإفصاح المرجعي: ${F.DISCLOSURE_LINE}
 `);
@@ -348,13 +348,13 @@ sol('answer_key.md', `# مفتاح ما زُرع في ملفات سنام
 
 | المختبر | الملف | المزروع | الأعداد المتوقعة |
 |---|---|---|---|
-| 1.1 | \`memo/qistas_memo.html\` | ${faulty.map(c => `${c.id}: ${c.fault}`).join('؛ ')} | ${P.CITES.length - faulty.length} سليمة و${faulty.length} معيبة |
+| 1.1 | \`memo/dhalul_memo.html\` | ${faulty.map(c => `${c.id}: ${c.fault}`).join('؛ ')} | ${P.CITES.length - faulty.length} سليمة و${faulty.length} معيبة |
 | 1.1 | \`memo/requests.html\` | سؤال إيحائي وخلاصة تجاريه | خلاصة لا يسندها المرجع 6 |
 | 1.1 | \`portal/en-law-7-2019.html\` | ترجمة غير رسمية لم تُحدَّث | المادة 9: خمسة أيام عمل بدل 72 ساعة |
 | 1.2 | \`contract/dpa_v2\` | ${facts12.red} خطوط حمراء، ${facts12.fallback} بدائل احتياطية، ${facts12.missing} بنود ناقصة | ${facts12.issues} مسألة في ${facts12.positions} موقفًا |
 | 1.2 | المسودتان | ${facts12.changes} تغييرًا، سكتت الرسالة عن ${facts12.changes_silent} | ${facts12.words_v1} كلمة في الأولى و${facts12.words_v2} في الثانية |
 | 1.2 | الجلستان المسجلتان | مسألة مختلقة، وتصنيف خطأ، ورقم بند خطأ، وتغيير مختلق | فات المراجعةَ ${facts12.run_missed.length} وفات المقارنةَ ${facts12.compare_missed.length} |
-| 2.1 | \`register/qistas_register_draft.csv\` | ${F.DRAFT.filter(d => d.fault).length} صفوف معيبة والتزامان فائتان | السجل المرجعي ${F.REGISTER.length} بندًا |
+| 2.1 | \`register/dhalul_register_draft.csv\` | ${F.DRAFT.filter(d => d.fault).length} صفوف معيبة والتزامان فائتان | السجل المرجعي ${F.REGISTER.length} بندًا |
 | 2.2 | \`matter/D01\` إلى \`D12\` | امتياز مشكوك فيه (D08)، ومستند الخصم بتعهد (D11)، وجزء حساس يُحجب (D06) | ${F.TOOLS.map(t => `${t} ${decisions.filter(d => d.tool === t).length}`).join('، ')} |
 | الختامي | \`capstone/\` | عيبان في كل مذكرة، وثلاث مسائل في كل اتفاقية | ثلاثة نماذج متكافئة لكل مسار |
 `);

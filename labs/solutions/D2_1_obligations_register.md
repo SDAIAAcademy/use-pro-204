@@ -1,6 +1,6 @@
 # الحل المرجعي: المختبر 2.1 سجل التزامات من أربع مواد
 
-نقطة البداية: النص الرسمي للائحة في موقع سدايا (https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf)، و`files/register/qistas_register_draft.csv` و`files/register/roles_and_controls.html` و`files/start/register_template.csv`. التحقق بالكود: `node labs/solutions/check.mjs 2.1`.
+نقطة البداية: النص الرسمي للائحة في موقع سدايا (https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf)، و`files/register/dhalul_register_draft.csv` و`files/register/roles_and_controls.html` و`files/start/register_template.csv`. التحقق بالكود: `node labs/solutions/check.mjs 2.1`.
 
 اللائحة ليست مقسمة إلى فصول، فأُخذت منها المواد 17 و23 و24 و25: اختيار جهة المعالجة، وأمن المعلومات، والإشعار بحوادث التسرب، وتقويم الأثر. صيغت الالتزامات هنا بكلمات المقرر بعد قراءة النص، والمرجع دائمًا هو النص العربي المنشور: افتحه قبل كل دفعة، فاللوائح تُعدَّل.
 

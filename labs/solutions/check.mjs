@@ -111,7 +111,7 @@ const LABS = {};
 // ------------------------------------------------------------------ 1.1
 LABS['1.1'] = () => {
   const expects = { 1: ['داخل نوارة', 'جنسية'], 2: ['بتعليمات موثقة'], 3: ['دون إذن', 'ثلاثين يومًا'], 4: ['اثنتين وسبعين ساعة'], 5: ['تشفير', 'اثني عشر شهرًا'], 6: ['بأمر قضائي مسبب'], 7: ['إلى أي دولة'], 8: ['بالتضامن'], 9: ['على إطلاقها'], 10: [] };
-  const got = runMemo('memo/qistas_memo.html', expects), key = json('D1_1_key.json');
+  const got = runMemo('memo/dhalul_memo.html', expects), key = json('D1_1_key.json');
   assert.equal(got.length, 10);
   assert.deepEqual(got.map(g => [g.id, g.fault, g.file]), key.map(k => [k.id, k.fault, k.page]));
   const faulty = got.filter(g => g.fault);
@@ -126,7 +126,7 @@ LABS['1.1'] = () => {
   const req = read(FILES, 'memo/requests.html'), [first, second] = [...req.matchAll(/<blockquote>([\s\S]*?)<\/blockquote>/g)].map(m => strip(m[1]));
   for (const w of ['تؤكد', 'تؤيد', 'في مأمن']) { assert.ok(first.includes(w)); assert.ok(!second.includes(w)); }
   // the memo's summary goes further than its own citation 6
-  assert.ok(has(strip(read(FILES, 'memo/qistas_memo.html')), 'دون علمكم وإذنكم'));
+  assert.ok(has(strip(read(FILES, 'memo/dhalul_memo.html')), 'دون علمكم وإذنكم'));
   assert.ok(has(articles('law-4-2021.html').arts['8'].text, 'ولا يتوقف تنفيذ الأمر على موافقة المتحكم'));
   // the stretch: the unofficial translation was not updated
   assert.ok(read(FILES, 'portal/en-law-7-2019.html').includes('five working days'));
@@ -215,7 +215,7 @@ LABS['1.2'] = () => {
   assert.equal((read(FILES, 'contract/cover_note.html').match(/<li>/g) || []).length, facts.changes_noted + facts.changes_partial);
   assert.ok(!/معالج(ين)? فرعي|السرية|إتلاف|التوافر|السداد/.test(note));
   // the recorded comparison
-  const run = read(FILES, 'contract/qistas_compare_run.html'), named = [...run.matchAll(/<li>البند (م?\d+\.\d+):/g)].map(m => m[1]);
+  const run = read(FILES, 'contract/dhalul_compare_run.html'), named = [...run.matchAll(/<li>البند (م?\d+\.\d+):/g)].map(m => m[1]);
   const changed = changes.map(c => c.where.split(' ')[0]);
   assert.ok(named.every(n => changed.includes(n)));
   assert.equal(named.length, facts.compare_found);
@@ -231,7 +231,7 @@ LABS['1.2'] = () => {
   const count = s => key.filter(r => r[3] === s).length;
   assert.deepEqual([count('خط أحمر'), count('بديل احتياطي'), count('بند ناقص'), count('مطابق')], [facts.red, facts.fallback, facts.missing, facts.compliant]);
   // the recorded review, row by row, against the text
-  const rows = [...read(FILES, 'contract/qistas_review_run.html').matchAll(/<tr><td>\d+<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><\/tr>/g)].map(m => ({ no: m[1], topic: unesc(m[2]), cls: m[3], note: m[4] }));
+  const rows = [...read(FILES, 'contract/dhalul_review_run.html').matchAll(/<tr><td>\d+<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><td>([^<]*)<\/td><\/tr>/g)].map(m => ({ no: m[1], topic: unesc(m[2]), cls: m[3], note: m[4] }));
   const playbook = [...read(FILES, 'contract/playbook.html').matchAll(/<tr><td>(P\d+)<\/td><td>([^<]*)<\/td>/g)].map(m => ({ id: m[1], topic: unesc(m[2]) }));
   assert.equal(playbook.length, 14);
   let real = 0, invented = 0, wrongClass = [], wrongNo = [];
@@ -262,7 +262,7 @@ LABS['2.1'] = async () => {
   // the processor's own obligations are owned by the supplier
   for (const r of rows) assert.equal(r[2] === 'جهة المعالجة', r[6] === 'المورّد رصين', r[0]);
   // the draft, row by row, against the reference
-  const draft = csv(read(FILES, 'register/qistas_register_draft.csv')).slice(2).filter(r => /^\d+$/.test(r[0])), key = csv(read(REF, 'D2_1_draft_key.csv')).slice(1);
+  const draft = csv(read(FILES, 'register/dhalul_register_draft.csv')).slice(2).filter(r => /^\d+$/.test(r[0])), key = csv(read(REF, 'D2_1_draft_key.csv')).slice(1);
   assert.equal(draft.length, 15);
   const byRef = new Map(); for (const r of rows) byRef.set(r[0], r);
   const found = [];
@@ -296,7 +296,7 @@ LABS['2.1'] = async () => {
 };
 
 // ------------------------------------------------------------------ 2.2
-const ORDER = ['لا أداة', 'قسطاس', 'المساعد التجاري المعتمد', 'أداة عامة'];
+const ORDER = ['لا أداة', 'ذلول', 'المساعد التجاري المعتمد', 'أداة عامة'];
 // The card applied rule by rule: each rule gives a ceiling, and the lowest ceiling wins.
 function card({ level, priv, pd, third }) {
   let ceiling = 3; const before = new Set(); let escalate = false;

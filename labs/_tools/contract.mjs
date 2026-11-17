@@ -340,7 +340,7 @@ export const APPROVAL = [
 ];
 
 // ------------------------------------------------------------------ the recorded assistant runs
-// What Qistas returned when asked to review the second draft against the playbook. `claims` is
+// What Dhalul returned when asked to review the second draft against the playbook. `claims` is
 // the clause number it wrote, which the participant checks against the text.
 export const RUN_REVIEW = [
   { p: 'P2', k: '9.a', cls: 'خط أحمر', note: 'المورّد يستعين بمعالجين فرعيين دون موافقة ولا إشعار.', fault: null },
@@ -354,7 +354,7 @@ export const RUN_REVIEW = [
 ];
 export const RUN_REVIEW_CLOSING = 'راجعتُ المسودة كاملة وفق دليل المواقف. لم أجد مسائل أخرى، وبقية المواقف مطابقة.';
 
-// What Qistas returned when given both drafts as text and asked what changed.
+// What Dhalul returned when given both drafts as text and asked what changed.
 export const RUN_COMPARE = { found: ['4.b', '9.a', '10.a', '11.a', '12.c', '14.b', '16.b', '20.a'],
   invented: 'المادة الثالثة: مدة الاتفاقية تغيرت من ثلاث سنوات إلى خمس.',
   closing: 'هذه كل التغييرات بين المسودتين. ما عداها متطابق.' };

@@ -1,5 +1,5 @@
 // Lab 1.1 and the capstone's first track: the closed legislation portal of the fictional state
-// of Nawara, the research memo the assistant Qistas wrote, and the two recorded requests.
+// of Nawara, the research memo the assistant Dhalul wrote, and the two recorded requests.
 // Nawara, its laws, its courts and every number here are invented. No real law is quoted.
 
 export const PORTAL_NAME = 'بوابة تشريعات نوارة';

@@ -27,7 +27,7 @@
     "priv": "نعم",
     "pd": "شخصية",
     "third": false,
-    "tool": "قسطاس",
+    "tool": "ذلول",
     "before": "لا شيء",
     "escalate": false,
     "rule": 3
@@ -49,7 +49,7 @@
     "priv": "لا",
     "pd": "حساسة: كله",
     "third": false,
-    "tool": "قسطاس",
+    "tool": "ذلول",
     "before": "ترميز",
     "escalate": false,
     "rule": 4
@@ -71,7 +71,7 @@
     "priv": "نعم",
     "pd": "شخصية",
     "third": false,
-    "tool": "قسطاس",
+    "tool": "ذلول",
     "before": "لا شيء",
     "escalate": false,
     "rule": 3
@@ -82,7 +82,7 @@
     "priv": "مشكوك",
     "pd": "شخصية",
     "third": false,
-    "tool": "قسطاس",
+    "tool": "ذلول",
     "before": "لا شيء",
     "escalate": true,
     "rule": 3
